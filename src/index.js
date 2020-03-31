@@ -5,12 +5,9 @@ import singleSpaReact from 'single-spa-react';
 
 import './scss/main.scss';
 
-const indexComponent = '../dist/index.html'
-
 const reactLifecycles = singleSpaReact({
   React,
   ReactDOM,
-  rootComponent: indexComponent,
   domElementGetter,
   suppressComponentDidCatchWarning: true
 });
