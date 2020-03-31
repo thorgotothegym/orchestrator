@@ -1,0 +1,35 @@
+/**
+* styling for first block
+* @params 
+*/
+@mixin titles($color, $fontSize, $fontFamily, $lineHeight) {
+  color: $color;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+  line-height: $lineHeight;
+}
+/**
+* Give style to apdex 
+*/
+@mixin apdex($color, $opacity, $fontSize, $fontFamily, $lineHeight) {
+  color: $color;
+  opacity: $opacity;
+  font-family: $fontFamily;
+  line-height: $lineHeight;
+}
+
+/**
+* Style the different elements of the blocks 
+*/
+@mixin elementsBlocks {
+  h4 {
+    @include titles($primaryColor, $smallFontSize, $fontSecundary, 1.2)
+  }
+  code {
+    padding: 0 30px 0 0;
+    @include apdex($secundaryColor, 62%, $extraSmallFontSize, $fontSecundary, 1.5);
+  }
+  span {
+    @include titles($secundaryColor, $smallFontSize, $fontPrimary, 1.2);
+  }
+}

@@ -1,0 +1,22 @@
+# Build Output
+dist/
+
+# Dependency directories
+node_modules/
+
+# Logs
+*.log
+
+# Lint & Test reports
+reports
+reports/temporary
+test-report.xml
+.scannerwork
+coverage/
+
+# Transpilation cache
+.awcache/
+
+# Visual Code
+.vs/
+.vscode/
